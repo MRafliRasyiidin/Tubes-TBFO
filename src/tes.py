@@ -9,14 +9,14 @@ global start_stack
 global final_state 
 global word
 
-f = open("a.txt", "r")
+f = open("PDA++.txt", "r")
 blank = " "
 newline = '\n'
 currentChar = f.read(1)
 
 states = []
 input_symbol = []
-stack = []
+stack_list = []
 start_state = []
 start_stack = []
 final_state = []
@@ -46,18 +46,10 @@ def readTag():
     global currentChar
     global tag
     tag = ''
-    while currentChar != blank or currentChar != ">":
+    while currentChar != blank and currentChar != ">":
         tag += currentChar
         currentChar = f.read(1)
-    if currentChar == blank:
-        ignoreBlank()
-        if currentChar == ">":
-            return tag, True
-        else :
-            return tag, False
-    else:
-        return tag, True
-        
+    return tag    
 
 def createPDA(states, input_symbol, stack, start_state, start_stack, final_state, transition_function):
     global currentChar
@@ -101,14 +93,39 @@ def createPDA(states, input_symbol, stack, start_state, start_stack, final_state
             ignoreBlank()
         transition_function[trans_tuple] = prod
         ignoreNewline()
-    
-createPDA(states, input_symbol, stack, start_state, start_stack, final_state, transition_function)
-start_state = start_state[0]
-start_stack = start_stack[0]
-final_state = final_state[0]
-stack = []
-list = []
-f.close()
+
+def closeProgram():
+    print(current_stack)
+    print(current_state)
+    print(x)
+    print(trans)
+    print(stack)
+    print("Syntax Error")
+    exit()
+
+def compareTransition(curr_state, input_sym, curr_stack):
+    global stack
+    global current_state
+    global current_stack
+    global trans
+    trans = (curr_state, input_sym, curr_stack)
+    if trans in transition_function:
+        result = transition_function[trans]
+        current_state = result[0]
+        stack.pop()
+        if len(result[1]) == 2:
+            stack.append(result[1][1])
+            stack.append(result[1][0])
+            current_stack = result[1][0]
+        else:
+            if result[1] != "e":
+                stack.append(result[1])
+                current_stack = result[1][0]
+            else:
+                current_stack = stack[len(stack)-1]
+    else:
+        print(trans)
+        closeProgram()
 
 def attr():
     attr = ""
@@ -147,25 +164,103 @@ def attr():
                     x = f.read(1)
                     attr += x
                 if currentChar == "":
-                    g = False
+                    closeProgram()
             else :
-                g = False
+                closeProgram()
         else:
-            g = False
+            closeProgram()
+
+def readAttribute():
+    global currentChar
+    global attribute
+    attribute = ''
+    while  currentChar != "\"" and currentChar != "" and currentChar != ">":
+        attribute += currentChar
+        currentChar = f.read(1)
+        if currentChar == blank:
+            ignoreBlank()
+    if currentChar == ">" or currentChar == "":
+        print("bjir")
+        closeProgram()
+    else:
+        attribute += currentChar
+        if attribute in special_attribute:
+            currentChar = f.read(1)
+            while  currentChar != "\"" and currentChar != "" and currentChar != ">":
+                attribute += currentChar
+                currentChar = f.read(1)
+            if currentChar == ">" and currentChar == "":
+                closeProgram()
+            else:
+                attribute += currentChar
+            if attribute not in full_special_attribute:
+                closeProgram()
+        else:
+            currentChar = f.read(1)
+            while  currentChar != "\"" and currentChar != "" and currentChar != ">":
+                currentChar = f.read(1)
+            if currentChar == ">" and currentChar == "":
+                print("cokk")
+                closeProgram()
+            else:
+                attribute += currentChar
+    return attribute
+
+    
+createPDA(states, input_symbol, stack_list, start_state, start_stack, final_state, transition_function)
+current_state = start_state[0]
+current_stack = start_stack[0]
+final_state = final_state[0]
+stack = []
+list = []
+stack.append(current_stack)
+list_atribute = ["id=\"\"", "class=\"\"", "style=\"\"", "src=\"\""]
+special_attribute = ["type=\"", "method=\""]
+full_special_attribute = ["type=\"text\"", "type=\"password\"", "type=\"email\"", "type=\"number\"", "type=\"checkbox\"", "type=\"text\"", "type=\"button\"","type=\"reset\"", "type=\"submit\"", "method=\"GET\"", "method=\"POST\""]
+void_element = ["<input", "<hr", "<link", "<br", "<img"]
+f.close()
+print(full_special_attribute)
 
 f = open("testing.html", "r")
 currentChar = f.read(1)
-for line in f:
-    if currentChar == "<":
-        x, cur = readTag()
-        stack.append(x)
-        ignoreBlank()
-        if not cur:
-            attr()
-        else:
-            if currentChar != ">":
-                g = False
-            else :
-                stack.append(">")
+while currentChar != "":
 
+    if currentChar == "<":
+        x = readTag()
+        if "/" not in x:
+            compareTransition(current_state, x, current_stack)
+        ignoreBlank()
+        if currentChar == ">":
+            if "/" in x:
+                x += currentChar
+                compareTransition(current_state, x, current_stack)
+            else:
+                compareTransition(current_state, currentChar, current_stack)
+        else:
+            while currentChar != ">" and currentChar != "":
+                ignoreBlank()
+                p = readAttribute()
+                if p in input_symbol:
+                    compareTransition(current_state, p, current_stack)
+                elif p in full_special_attribute:
+                    compareTransition(current_state, p, current_stack)
+                else:
+                    closeProgram()
+                currentChar = f.read(1)
+                ignoreBlank()
+            if currentChar == ">":
+                compareTransition(current_state, currentChar, current_stack)
+    if current_state == "ininput" or current_state == "inhr" or current_state == "inimage" or current_state == "inlink":
+        compareTransition(current_state, "e", current_stack)
+        print("pepepe", current_state)
+    currentChar = f.read(1)
+    ignoreNewline()
+    ignoreBlank()
+    print(stack)
+    
+
+
+print(current_state)
+print(current_stack)
+print(stack)
 # <html id=""

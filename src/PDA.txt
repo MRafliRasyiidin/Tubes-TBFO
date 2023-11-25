@@ -5,34 +5,26 @@ out
 Z
 F
 
-#html
 out <html Z fhtml aZ
 fhtml id="" a fhtml a
 fhtml class="" a fhtml a
 fhtml style="" a fhtml a
 fhtml > a inhtml h
 
-#head
 inhtml <head h fhead ah
 fhead id="" a fhead a
 fhead class="" a fhead a
 fhead style="" a fhead a
 fhead > a inhead H
-inhead </head> H inhtml e
+inhead </head> H inhtml p
 
-#body
-inhtml <body h fbody ah
+inhtml <body p fbody a
 fbody id="" a fbody a
 fbody class="" a fbody a
 fbody style="" a fbody a
 fbody > a inbody b
 inbody </body> b inhtml e
 
-lang="
-
-
-
-#komen
 inhtml <!----> h inhtml h
 inhtml <!----> h inhtml h
 inhtml <!----> h inhtml h
@@ -47,7 +39,6 @@ inhtml <!----> h inhtml h
 inhtml <!----> h inhtml h
 inhtml <!----> h inhtml h
 
-#title
 inhead <title H ftitle aH
 ftitle id="" a ftitle a
 ftitle class="" a ftitle a
@@ -55,7 +46,6 @@ ftitle style="" a ftitle a
 ftitle > a intitle t
 intitle </title> t inhead e
 
-#src
 inhead <script H fscript dH
 inbody <script b fscript db
 indiv <script z fscript dz
@@ -68,7 +58,6 @@ inscript </script> H inbody H
 inscript </script> b inhead b
 inscript </script> z indiv z
 
-#link
 inhead <link h inlink lh
 inbody <link b inlink lb
 indiv <link z inlink lz
@@ -86,7 +75,6 @@ outlink e H inhead H
 outlink e b inbody b
 outlink e z indiv z
 
-#h1-h6, p
 inbody <h1> b inh1 1b
 inh1 </h1> 1 inbody e
 inbody <h2> b inh2 2b
@@ -117,7 +105,6 @@ inh6 </h6> 6 indiv e
 indiv <p> z inp ab
 inp </p> a indiv e
 
-#formatting
 inbody <em> b inem cb
 inem </em> c inbody e
 inbody <b> b inb db
@@ -258,7 +245,6 @@ inimage > a inimage e
 inimage e b inbody b
 inimage e z indiv z
 
-#a
 inbody <a b ina ab
 indiv <a z ina az
 ina href="" a ina a
@@ -269,7 +255,6 @@ ina > a ina e
 ina e b inbody b
 ina e z inbody z
 
-#hr, br
 inbody <br b inbr ab
 indiv <br z inbr az
 inbr id="" e inbr e
@@ -288,20 +273,18 @@ inhr > a inhr e
 inhr e b inbody b
 inhr e z indiv z
 
-#button
-inbody <button b inbutton ab
-indiv <button z inbutton az
-inbutton type="button" a inbutton a
-inbutton type="reset" a inbutton a
-inbutton type="submit" a inbutton a
-inbutton id="" a inbutton a
-inbutton style="" a inbutton a
-inbutton class="" a inbutton a
-inbutton > a inbutton e
-inbutton e b inbody b
-inbutton e z indiv z
+inbody <button b fbutton ab
+indiv <button z fbutton az
+fbutton type="button" a fbutton a
+fbutton type="reset" a fbutton a
+fbutton type="submit" a fbutton a
+fbutton id="" a fbutton a
+fbutton style="" a fbutton a
+fbutton class="" a fbutton a
+fbutton > a inbutton e
+inbutton </button> b inbody b
+inbutton </button> z indiv z
 
-#form
 inbody <form b fform ab
 indiv <form z fform az
 fform action="" a fform a
@@ -314,7 +297,6 @@ fform > a inform e
 inform </form> b inbody b
 inform </form> z indiv z
 
-#input
 inbody <input b ininput ab
 indiv <input z ininput az
 ininput type="text" a ininput a
@@ -329,7 +311,6 @@ ininput > a ininput e
 ininput e b inbody b
 ininput e z indiv z
 
-#table
 inbody <table b ftable ab
 indiv <table z ftable az
 ftable id="" a ftable a
@@ -361,5 +342,5 @@ fth class="" b fth b
 fth > b inth b
 inth </th> b intable e
 
-outbody </html> h out e
+inhtml </html> h out e
 out e Z F e
