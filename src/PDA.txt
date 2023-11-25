@@ -28,7 +28,24 @@ fbody style="" a fbody a
 fbody > a inbody b
 inbody </body> b inhtml e
 
+lang="
+
+
+
 #komen
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
+inhtml <!----> h inhtml h
 
 #title
 inhead <title H ftitle aH
