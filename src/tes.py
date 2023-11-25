@@ -46,17 +46,14 @@ def readTag():
     global currentChar
     global tag
     tag = ''
+    currentChar = f.read(1)
+    if currentChar == "/":
+        x = True
     while currentChar != blank or currentChar != ">":
         tag += currentChar
         currentChar = f.read(1)
-    if currentChar == blank:
-        ignoreBlank()
-        if currentChar == ">":
-            return tag, True
-        else :
-            return tag, False
-    else:
-        return tag, True
+    
+    return tag, x
         
 
 def createPDA(states, input_symbol, stack, start_state, start_stack, final_state, transition_function):
@@ -112,13 +109,12 @@ f.close()
 
 def attr():
     attr = ""
-    while currentChar != "\"" or currentChar != blank:
+    while currentChar != "=" or currentChar != blank or currentChar != "":
         x = f.read(1)
         attr += x
-        
-    if attr != "type=\"" or attr != "method=\"":
-        if currentChar == blank:
-            ignoreBlank()
+    if currentChar == blank:
+        ignoreBlank()
+    if attr != "type\"" or attr != "method\"":
         if currentChar == "=":
             attr += currentChar
             x = f.read(1)
@@ -135,8 +131,6 @@ def attr():
         else:
             g = False
     else:
-        if currentChar == blank:
-            ignoreBlank()
         if currentChar == "=":
             attr += currentChar
             x = f.read(1)
@@ -152,20 +146,37 @@ def attr():
                 g = False
         else:
             g = False
+    return attr
+
+state = ""
 
 f = open("testing.html", "r")
 currentChar = f.read(1)
-for line in f:
+while currentChar != "":
     if currentChar == "<":
-        x, cur = readTag()
+        x = readTag()
         stack.append(x)
-        ignoreBlank()
-        if not cur:
-            attr()
+        while currentChar != ">" or currentChar != "" or currentChar != "/":
+            ignoreBlank()
+            stack.append(attr())
+        if currentChar == ">":
+            stack.append(">")
         else:
-            if currentChar != ">":
-                g = False
-            else :
-                stack.append(">")
+            g = False
 
+while currentChar != "":
+    if state[:1] == "in" or state == "out":
+        if currentChar == "<":
+            currentChar,x = readTag()
+            stack.append(x)
+            if not x :
+                ignoreBlank()
+                while currentChar != ">" or currentChar != "":
+                    ignoreBlank()
+                    stack.append(attr())
+                if currentChar == ">":
+                    stack.append(">")
+                else:
+                    g = False
+        
 # <html id=""
