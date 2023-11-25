@@ -87,35 +87,74 @@ outlink e b inbody b
 outlink e z indiv z
 
 #h1-h6, p
-inbody <h1> b inh1 1b
-inh1 </h1> 1 inbody e
-inbody <h2> b inh2 2b
-inh2 </h2> 2 inbody e
-inbody <h3> b inh3 3b
-inh3 </h3> 3 inbody e
-inbody <h4> b inh4 4b
-inh4 </h4> 4 inbody e
-inbody <h5> b inh5 5b
-inh5 </h5> 5 inbody e
-inbody <h6> b inh6 6b
-inh6 </h6> 6 inbody e
-inbody <p> b inp ab
-inp </p> a inbody e
+indiv <h1 z fh1 az
+inbody <h1 b fh1 ab
+fh1 id="" a fh1 a
+fh1 style="" a fh1 a
+fh1 class="" a fh1 a
+fh1 > a inh1 1
+inh1 </h1> 1 inh1 e
+inh1 e b inbody b
+inh1 e z indiv z
 
-indiv <h1> z inh1 1z
-inh1 </h1> 1 indiv e
-indiv <h2> z inh2 2z
-inh2 </h2> 2 indiv e
-indiv <h3> z inh3 3z
-inh3 </h3> 3 indiv e
-indiv <h4> z inh4 4z
-inh4 </h4> 4 indiv e
-indiv <h5> z inh5 5z
-inh5 </h5> 5 indiv e
-indiv <h6> z inh6 6z
-inh6 </h6> 6 indiv e
-indiv <p> z inp ab
-inp </p> a indiv e
+indiv <h2 z fh2 az
+inbody <h2 b fh2 ab
+fh2 id="" a fh2 a
+fh2 style="" a fh2 a
+fh2 class="" a fh2 a
+fh2 > a inh1 2
+inh2 </h2> 2 inbody e
+inh2 e b inbody b
+inh2 e z indiv z
+
+indiv <h3 z fh3 az
+inbody <h3 b fh3 ab
+fh3 id="" a fh3 a
+fh3 style="" a fh3 a
+fh3 class="" a fh3 a
+fh3 > a inh1 3
+inh1 </h3> 3 inbody e
+inh3 e b inbody b
+inh3 e z indiv z
+
+indiv <h4 z fh4 az
+inbody <h4 b fh4 ab
+fh4 id="" a fh4 a
+fh4 style="" a fh4 a
+fh4 class="" a fh4 a
+fh4 > a inh1 4
+inh1 </h4> 4 inbody e
+inh4 e b inbody b
+inh4 e z indiv z
+
+indiv <h5 z fh5 az
+inbody <h5 b fh5 ab
+fh5 id="" a fh5 a
+fh5 style="" a fh5 a
+fh5 class="" a fh5 a
+fh5 > a inh1 5
+inh1 </h5> 5 inbody e
+inh5 e b inbody b
+inh5 e z indiv z
+
+indiv <h6 z fh6 az
+inbody <h6 b fh6 ab
+fh6 id="" a fh6 a
+fh6 style="" a fh6 a
+fh6 class="" a fh6 a
+fh6 > a inh1 6
+inh1 </h6> 6 inbody e
+inh6 e b inbody b
+inh6 e z indiv z
+
+inbody <p b fp ab
+indiv <p z fp az
+fp id="" a fp a
+fp style="" a fp a
+fp class="" a fp a
+inp </p> a inp e
+inp e b inbody b
+inp e z indiv z
 
 #formatting
 inbody <em> b inem cb
