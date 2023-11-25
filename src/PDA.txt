@@ -28,8 +28,6 @@ fbody style="" a fbody a
 fbody > a inbody b
 inbody </body> b inhtml e
 
-lang="
-
 
 
 #komen
