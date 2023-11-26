@@ -555,5 +555,56 @@ fth class="" b fth b
 fth > b inth y
 inth </th> y intr1 e
 
+inabbr <!----> 2 inabbr 2
+inabbr <!----> 3 inabbr 3
+inabbr <!----> 4 inabbr 4
+inabbr <!----> 5 inabbr 5
+inabbr <!----> 6 inabbr 6
+inabbr <!----> p inabbr p
+inabbr <!----> u inabbr u
+inabbr <!----> t inabbr t
+inabbr <!----> k inabbr k
+inabbr <!----> y inabbr y
+
+instrong <!----> f instrong f
+instrong <!----> z instrong z
+instrong <!----> H instrong H
+instrong <!----> t instrong t
+instrong <!----> s instrong s
+instrong <!----> c instrong c
+instrong <!----> 1 instrong 1
+instrong <!----> 2 instrong 2
+instrong <!----> 3 instrong 3
+instrong <!----> 4 instrong 4
+instrong <!----> 5 instrong 5
+instrong <!----> 6 instrong 6
+instrong <!----> p instrong p
+instrong <!----> u instrong u
+instrong <!----> t instrong t
+instrong <!----> k instrong k
+instrong <!----> y instrong y
+
+insmall <!----> f insmall f
+insmall <!----> z insmall z
+insmall <!----> H insmall H
+insmall <!----> t insmall t
+insmall <!----> s insmall s
+insmall <!----> c insmall c
+insmall <!----> 1 insmall 1
+insmall <!----> 2 insmall 2
+insmall <!----> 3 insmall 3
+insmall <!----> 4 insmall 4
+insmall <!----> 5 insmall 5
+insmall <!----> 6 insmall 6
+insmall <!----> p insmall p
+insmall <!----> u insmall u
+insmall <!----> t insmall t
+insmall <!----> k insmall k
+insmall <!----> y insmall y
+
+intr <!----> n intr n
+intr1 <!----> r intr1 r
+intable <!----> l intable l
+
 inhtml </html> h out e
 out e Z F e
