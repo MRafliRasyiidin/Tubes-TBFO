@@ -1,0 +1,559 @@
+out inhtml inhead inbody outbody inh1 inh2 inh3 inh4 inh5 inh6 inbutton inbody inform ina intitle inscript inp inem inb inabbr instrong insmall inimage intable intr intd inth inlink outlink fbr inhr ininput fhtml fhead fbody fh1 fh2 fh3 fh4 fh5 fh6 fbutton fdiv fform fa ftitle fscript fp fem fb fabbr fstrong fsmall ftable ftr ftd fth inbr
+<html </html> <body </body> <head </head> > id="" class="" style="" <title <link <script <h1 <h2 <h3 <h4 <h5 <h6 <p <br <em <b <abbr <strong <small <hr <div <a <img <button <form <input <table <tr <td <th rel="" href="" src="" alt="" type="submit" type="reset" type="button" action="" method="GET" method="POST" type="text" type="password" type="email" type="number" type="checkbox"
+Z a h H b c d e f g i z l 1 2 3 4 5 6 p
+out
+Z
+F
+
+#html
+out <html Z fhtml aZ
+fhtml id="" a fhtml a
+fhtml class="" a fhtml a
+fhtml style="" a fhtml a
+fhtml > a inhtml h
+
+#head
+inhtml <head h fhead ah
+fhead id="" a fhead a
+fhead class="" a fhead a
+fhead style="" a fhead a
+fhead > a inhead H
+inhead </head> H inhtml e
+
+#body
+inhtml <body h fbody ah
+fbody id="" a fbody a
+fbody class="" a fbody a
+fbody style="" a fbody a
+fbody > a inbody b
+inbody </body> b inhtml e
+
+#komen
+inhtml <!----> h inhtml h
+
+#title
+inhead <title H ftitle aH
+ftitle id="" a ftitle a
+ftitle class="" a ftitle a
+ftitle style="" a ftitle a
+ftitle > a intitle t
+intitle </title> t inhead e
+
+#src
+inhead <script H fscript aH
+inbody <script b fscript db
+inbody <script z fscript dz
+inbody <script f fscript df
+fscript src="" d fscript d
+fscript id="" d fscript d
+fscript style="" d fscript d
+fscript class="" d fscript d
+fscript src="" a fscript a
+fscript id="" a fscript a
+fscript style="" a fscript a
+fscript class="" a fscript a
+fscript > d inscript s
+fscript > a inscript c
+inscript </script> c inhead e
+inscript </script> s inbody e
+
+#link
+inhead <link H inlink lH
+inbody <link b inlink lb
+inbody <link z inlink lz
+inbody <link f inlink lf
+inlink rel="" l inlink a
+inlink href="" a inlink a
+inlink id="" a inlink a
+inlink style="" a inlink a
+inlink class="" a inlink a
+inlink href="" l inlink l
+inlink id="" l inlink l
+inlink style="" l inlink l
+inlink class="" l inlink l
+inlink > a inlink e
+inlink e b inbody b
+inlink e z inbody z
+inlink e f inbody f
+inlink e H inhead H
+
+#h1-h6, p
+inbody <h1 z fh1 az
+inbody <h1 b fh1 ab
+inbody <h1 f fh1 af
+fh1 id="" a fh1 a
+fh1 style="" a fh1 a
+fh1 class="" a fh1 a
+fh1 > a inh1 1
+inh1 </h1> 1 inbody e
+
+inbody <h2 z fh2 az
+inbody <h2 b fh2 ab
+inbody <h2 f fh2 af
+fh2 id="" a fh2 a
+fh2 style="" a fh2 a
+fh2 class="" a fh2 a
+fh2 > a inh2 2
+inh2 </h2> 2 inbody e
+
+inbody <h3 z fh3 az
+inbody <h3 b fh3 ab
+inbody <h3 f fh3 af
+fh3 id="" a fh3 a
+fh3 style="" a fh3 a
+fh3 class="" a fh3 a
+fh3 > a inh3 3
+inh3 </h3> 3 inbody e
+
+inbody <h4 z fh4 az
+inbody <h4 b fh4 ab
+inbody <h4 f fh4 af
+fh4 id="" a fh4 a
+fh4 style="" a fh4 a
+fh4 class="" a fh4 a
+fh4 > a inh4 4
+inh4 </h4> 4 inbody e
+
+inbody <h5 z fh5 az
+inbody <h5 b fh5 ab
+inbody <h5 f fh5 af
+fh5 id="" a fh5 a
+fh5 style="" a fh5 a
+fh5 class="" a fh5 a
+fh5 > a inh5 5
+inh5 </h5> 5 inbody e
+
+inbody <h6 z fh6 az
+inbody <h6 b fh6 ab
+inbody <h6 f fh6 af
+fh6 id="" a fh6 a
+fh6 style="" a fh6 a
+fh6 class="" a fh6 a
+fh6 > a inh6 6
+inh6 </h6> 6 inbody e
+
+inbody <p b fp ab
+inbody <p z fp az
+inbody <p f fp af
+fp id="" a fp a
+fp style="" a fp a
+fp class="" a fp a
+fp > a inp p
+inp </p> p inbody e
+
+#formatting
+fem id="" a fem a
+fem style="" a fem a
+fem class="" a fem a
+fem > a inem e
+
+fb id="" a fb a
+fb style="" a fb a
+fb class="" a fb a
+fb > a inb e
+
+fabbr id="" a fabbr a
+fabbr style="" a fabbr a
+fabbr class="" a fabbr a
+fabbr > a inabbr e
+
+fstrong id="" a fstrong a
+fstrong style="" a fstrong a
+fstrong class="" a fstrong a
+fstrong > a instrong e
+
+fsmall id="" a fsmall a
+fsmall style="" a fsmall a
+fsmall class="" a fsmall a
+fsmall > a insmall e
+
+inbody <br b fbr ab
+fbr id="" a fbr a
+fbr style="" a fbr a
+fbr class="" a fbr a
+fbr > a inbr e
+inbr e b inbody b
+inbr e z inbody z 
+inbr e f inbody f
+
+inscript <em d fem ad
+inem </em> d inscript d
+inscript <em s fem as
+inem </em> s inscript s
+
+inscript <b d fb ad
+inb </b> d inscript d
+inscript <b s fb as
+inb </b> s inscript s
+
+inscript <abbr d fabbr ad
+inabbr </abbr> d inscript d
+inscript <abbr s fabbr as
+inabbr </abbr> s inscript s
+
+inscript <strong d fstrong ad
+instrong </strong> d inscript d
+inscript <strong s fstrong as
+instrong </strong> s inscript s
+
+inscript <small d fsmall ad
+insmall </small> d inscript d
+inscript <small s fsmall as
+insmall </small> s inscript s
+
+inh1 <em 1 fem a1
+inem </em> 1 inh1 1
+inh1 <b 1 fb a1
+inb </b> 1 inh1 1
+inh1 <abbr 1 fabbr a1
+inabbr </abbr> 1 inh1 1
+inh1 <strong 1 fstrong a1
+instrong </strong> 1 inh1 1
+inh1 <strong 1 fstrong a1
+instrong </strong> 1 inh1 1
+inh1 <small 1 fsmall a1
+insmall </small> 1 inh1 1
+inh1 <br 1 fbr a1
+inbr e 1 inh1 1
+
+inh2 <em 2 fem a2
+inem </em> 2 inh2 2
+inh2 <b 2 fb a2
+inb </b> 2 inh2 2
+inh2 <abbr 2 fabbr a2
+inabbr </abbr> 2 inh2 2
+inh2 <strong 2 fstrong a2
+instrong </strong> 2 inh2 2
+inh2 <strong 2 fstrong a2
+instrong </strong> 2 inh2 2
+inh2 <small 2 fsmall a2
+insmall </small> 2 inh2 2
+inh2 <br 2 fbr a2
+inbr e 2 inh2 2
+
+inh3 <em 3 fem a3
+inem </em> 3 inh3 3
+inh3 <b 3 fb a3
+inb </b> 3 inh3 3
+inh3 <abbr 3 fabbr a3
+inabbr </abbr> 3 inh3 3
+inh3 <strong 3 fstrong a3
+instrong </strong> 3 inh3 3
+inh3 <strong 3 fstrong a3
+instrong </strong> 3 inh3 3
+inh3 <small 3 fsmall a3
+insmall </small> 3 inh3 3
+inh3 <br 3 fbr a3
+inbr e 3 inh3 3
+
+inh4 <em 4 fem a4
+inem </em> 4 inh4 4
+inh4 <b 4 fb a4
+inb </b> 4 inh4 4
+inh4 <abbr 4 fabbr a4
+inabbr </abbr> 4 inh4 4
+inh4 <strong 4 fstrong a4
+instrong </strong> 4 inh4 4
+inh4 <strong 4 fstrong a4
+instrong </strong> 4 inh4 4
+inh4 <small 4 fsmall a4
+insmall </small> 4 inh4 4
+inh4 <br 4 fbr a4
+inbr e 4 inh4 4
+
+inh5 <em 5 fem a5
+inem </em> 5 inh5 5
+inh5 <b 5 fb a5
+inb </b> 5 inh5 5
+inh5 <abbr 5 fabbr a5
+inabbr </abbr> 5 inh5 5
+inh5 <strong 5 fstrong a5
+instrong </strong> 5 inh5 5
+inh5 <strong 5 fstrong a5
+instrong </strong> 5 inh5 5
+inh5 <small 5 fsmall a5
+insmall </small> 5 inh5 5
+inh5 <br 5 fbr a5
+inbr e 5 inh5 5
+
+inp <em p fem ap
+inem </em> p inp p
+inp <b p fb ap
+inb </b> p inp p
+inp <abbr p fabbr ap
+inabbr </abbr> p inp p
+inp <strong p fstrong ap
+instrong </strong> p inp p
+inp <strong p fstrong ap
+instrong </strong> p inp p
+inp <small p fsmall ap
+insmall </small> p inp p
+inp <br p fbr ap
+inbr e p inp p
+
+ina <em u fem au
+inem </em> u ina u
+ina <b u fb au
+inb </b> u ina u
+ina <abbr u fabbr au
+inabbr </abbr> u ina u
+ina <strong u fstrong au
+instrong </strong> u ina u
+ina <strong u fstrong au
+instrong </strong> u ina u
+ina <small u fsmall au
+insmall </small> u ina u
+ina <br u fbr au
+inbr e u ina u
+
+ina <em z fem az
+inem </em> z ina z
+ina <b z fb az
+inb </b> z ina z
+ina <abbr z fabbr az
+inabbr </abbr> z ina z
+ina <strong z fstrong az
+instrong </strong> z ina z
+ina <strong z fstrong az
+instrong </strong> z ina z
+ina <small z fsmall az
+insmall </small> z ina z
+ina <br z fbr az
+inbr e z ina z
+
+ina <em f fem af
+inem </em> f ina f
+ina <b f fb af
+inb </b> f ina f
+ina <abbr f fabbr af
+inabbr </abbr> f ina f
+ina <strong f fstrong af
+instrong </strong> f ina f
+ina <strong f fstrong af
+instrong </strong> f ina f
+ina <small f fsmall af
+insmall </small> f ina f
+ina <br f fbr af
+inbr e f ina f
+
+inbody <em z fem az
+inem </em> z inbody z
+inbody <b z fb az
+inb </b> z inbody z
+inbody <abbr z fabbr az
+inabbr </abbr> z inbody z
+inbody <strong z fstrong az
+instrong </strong> z inbody z
+inbody <strong z fstrong az
+instrong </strong> z inbody z
+inbody <small z fsmall az
+insmall </small> z inbody z
+inbody <br z fbar az
+inbr e z inbody z
+
+inbody <em f fem af
+inem </em> f inbody f
+inbody <b f fb af
+inb </b> f inbody f
+inbody <abbr f fabbr af
+inabbr </abbr> f inbody f
+inbody <strong f fstrong af
+instrong </strong> f inbody f
+inbody <strong f fstrong af
+instrong </strong> f inbody f
+inbody <small f fsmall af
+insmall </small> f inbody f
+inbody <br f fbar af
+inbr e f inbody f
+
+inbutton <em t fem at
+inem </em> t inbutton t
+inbutton <b t fb at
+inb </b> t inbutton t
+inbutton <abbr t fabbr at
+inabbr </abbr> t inbutton t
+inbutton <strong t fstrong at
+instrong </strong> t inbutton t
+inbutton <strong t fstrong at
+instrong </strong> t inbutton t
+inbutton <small t fsmall at
+insmall </small> t inbutton t
+inbutton <br t fbr at
+inbr e t inbutton t
+
+intd <em k fem ak
+inem </em> k intd k
+intd <b k fb ak
+inb </b> k intd k
+intd <abbr k fabbr ak
+inabbr </abbr> k intd k
+intd <strong k fstrong ak
+instrong </strong> k intd k
+intd <strong k fstrong ak
+instrong </strong> k intd k
+intd <small k fsmall ak
+insmall </small> k intd k
+intd <br k fbrl ak
+inbr e k intd k
+
+intd <em x fem ax
+inem </em> x intd x
+intd <b x fb ax
+inb </b> x intd x
+intd <abbr x fabbr ax
+inabbr </abbr> x intd x
+intd <strong x fstrong ax
+instrong </strong> x intd x
+intd <strong x fstrong ax
+instrong </strong> x intd x
+intd <small x fsmall ax
+insmall </small> x intd x
+intd <br x fbrl ax
+inbr e x intd x
+
+inth <em y fem ay
+inem </em> y inth y
+inth <b y fb ay
+inb </b> y inth y
+inth <abbr y fabbr ay
+inabbr </abbr> y inth y
+inth <strong y fstrong ay
+instrong </strong> y inth y
+inth <strong y fstrong ay
+instrong </strong> y inth y
+inth <small y fsmall ay
+insmall </small> y inth y
+inth <br y fbr ay
+inbr e y inth y
+
+#div
+inbody <div b fdiv ab
+inbody <div z fdiv az
+inform <div f fdiv af
+fdiv id="" a fdiv a
+fdiv style="" a fdiv a
+fdiv class="" a fdiv a
+fdiv > a inbody z
+inbody </div> z inbody e
+
+#image
+inbody <img b fimage ib
+inbody <img z fimage iz
+inbody <img f fimage if
+fimage src="" i fimage a
+fimage alt="" i fimage i
+fimage id="" i fimage i
+fimage style="" i fimage i
+fimage class="" i fimage i
+fimage alt="" a fimage a
+fimage id="" a fimage a
+fimage style="" a fimage a
+fimage class="" a fimage a
+fimage > a inbody e
+
+#a
+inbody <a b ina ab
+inbody <a z ina az
+inbody <a f ina af
+ina href="" a ina a
+ina id="" a ina a
+ina style="" a ina a
+ina class="" a ina a
+ina > a ina u
+ina </a> u inbody e
+
+#hr
+inbody <hr b fhr ab
+inbody <br z fhr az
+inbody <br f fhr af
+fhr id="" e fhr e
+fhr style="" e fhr e
+fhr class="" e fhr e
+fhr > a inbody e
+
+#button
+inbody <button b fbutton ab
+inbody <button z fbutton az
+inbody <button f fbutton af
+fbutton type="button" a fbutton a
+fbutton type="reset" a fbutton a
+fbutton type="submit" a fbutton a
+fbutton id="" a fbutton a
+fbutton style="" a fbutton a
+fbutton class="" a fbutton a
+fbutton > a inbutton t
+inbutton </button> t inbody e
+
+#form
+inbody <form b fform ab
+inbody <form z fform az
+fform action="" a fform a
+fform method="GET" a fform a
+fform method="POST" a fform a
+fform id="" a fform a
+fform style="" a fform a
+fform class="" a fform a
+fform > a inbody f
+inbody </form> f inbody e
+
+#input
+inbody <input b finput ab
+inbody <input z finput az
+inbody <input f finput af
+finput type="text" a finput a
+finput type="password" a finput a
+finput type="email" a finput a
+finput type="number" a finput a
+finput type="checkbox" a finput a
+finput id="" a finput a
+finput style="" a finput a
+finput class="" a finput a
+finput > a inbody e
+
+#table
+inbody <table b ftable ab
+inbody <table z ftable az
+inbody <table f ftable af
+ftable id="" a ftable a
+ftable style="" a ftable a
+ftable class="" a ftable a
+ftable > a intable l
+intable </intable> l inbody e
+
+intable <tr l ftr al
+ftr id="" a ftr a
+ftr style="" a ftr a
+ftr class="" a ftr a
+ftr > a intr1 r
+intr1 </tr> r intable1 e
+
+intable1 <tr l ftr al
+ftr id="" a ftr a
+ftr style="" a ftr a
+ftr class="" a ftr a
+ftr > a intr n
+intr </tr> n intable1 e
+
+intr1 <td r ftd br
+ftd id="" b ftd b
+ftd style="" b ftd b
+ftd class="" b ftd b
+ftd > b intd k
+intd </td> k intr1 e
+
+intr <td n ftd an
+ftd id="" a ftd a
+ftd style="" a ftd a
+ftd class="" a ftd a
+ftd > a intd x
+intd </td> x intr e
+
+intr1 <th a fth ba
+fth id="" b fth b
+fth style="" b fth b
+fth class="" b fth b
+fth > b inth y
+inth </th> y intr1 e
+
+inhtml </html> h out e
+out e Z F e

@@ -9,7 +9,7 @@ global start_stack
 global final_state 
 global word
 
-f = open("PDA++.txt", "r")
+f = open("PDA++++.txt", "r")
 blank = " "
 newline = '\n'
 currentChar = f.read(1)
@@ -100,6 +100,7 @@ def closeProgram():
     print(x)
     print(trans)
     print(stack)
+    print("curr,", currentChar )
     print("Syntax Error")
     exit()
 
@@ -109,6 +110,7 @@ def compareTransition(curr_state, input_sym, curr_stack):
     global current_stack
     global trans
     trans = (curr_state, input_sym, curr_stack)
+    trans2 = (curr_state, "e", curr_stack)
     if trans in transition_function:
         result = transition_function[trans]
         current_state = result[0]
@@ -123,6 +125,21 @@ def compareTransition(curr_state, input_sym, curr_stack):
                 current_stack = result[1][0]
             else:
                 current_stack = stack[len(stack)-1]
+    elif trans2 in transition_function:
+        result = transition_function[trans2]
+        current_state = result[0]
+        stack.pop()
+        if len(result[1]) == 2:
+            stack.append(result[1][1])
+            stack.append(result[1][0])
+            current_stack = result[1][0]
+        else:
+            if result[1] != "e":
+                stack.append(result[1])
+                current_stack = result[1][0]
+            else:
+                current_stack = stack[len(stack)-1]
+        compareTransition(current_state, input_sym,current_stack)
     else:
         print(trans)
         closeProgram()
@@ -214,49 +231,60 @@ final_state = final_state[0]
 stack = []
 list = []
 stack.append(current_stack)
-list_atribute = ["id=\"\"", "class=\"\"", "style=\"\"", "src=\"\""]
 special_attribute = ["type=\"", "method=\""]
 full_special_attribute = ["type=\"text\"", "type=\"password\"", "type=\"email\"", "type=\"number\"", "type=\"checkbox\"", "type=\"text\"", "type=\"button\"","type=\"reset\"", "type=\"submit\"", "method=\"GET\"", "method=\"POST\""]
-void_element = ["<input", "<hr", "<link", "<br", "<img"]
 f.close()
 print(full_special_attribute)
 
 f = open("testing.html", "r")
 currentChar = f.read(1)
 while currentChar != "":
-
     if currentChar == "<":
         x = readTag()
-        if "/" not in x:
-            compareTransition(current_state, x, current_stack)
-        ignoreBlank()
-        if currentChar == ">":
-            if "/" in x:
-                x += currentChar
-                compareTransition(current_state, x, current_stack)
-            else:
-                compareTransition(current_state, currentChar, current_stack)
-        else:
-            while currentChar != ">" and currentChar != "":
-                ignoreBlank()
-                p = readAttribute()
-                if p in input_symbol:
-                    compareTransition(current_state, p, current_stack)
-                elif p in full_special_attribute:
-                    compareTransition(current_state, p, current_stack)
-                else:
-                    closeProgram()
+        if x == "<!--":
+            ignoreBlank()
+            closeComment = ""
+            while closeComment != "-->" and currentChar != "":
+                closeComment += currentChar
                 currentChar = f.read(1)
-                ignoreBlank()
+                if len(closeComment) > 3:
+                    a = ""
+                    a += closeComment[1]
+                    a += closeComment[2]
+                    a += closeComment[3]
+                    closeComment = a
+            if closeComment != "-->":
+                closeProgram()
+        else:
+            if "/" not in x:
+                compareTransition(current_state, x, current_stack)
+            ignoreBlank()
             if currentChar == ">":
-                compareTransition(current_state, currentChar, current_stack)
+                if "/" in x:
+                    x += currentChar
+                    compareTransition(current_state, x, current_stack)
+                else:
+                    compareTransition(current_state, currentChar, current_stack)
+            else:
+                while currentChar != ">" and currentChar != "":
+                    ignoreBlank()
+                    p = readAttribute()
+                    if p in input_symbol:
+                        compareTransition(current_state, p, current_stack)
+                    elif p in full_special_attribute:
+                        compareTransition(current_state, p, current_stack)
+                    else:
+                        closeProgram()
+                    currentChar = f.read(1)
+                    ignoreBlank()
+                if currentChar == ">":
+                    compareTransition(current_state, currentChar, current_stack)
     if current_state == "ininput" or current_state == "inhr" or current_state == "inimage" or current_state == "inlink":
         compareTransition(current_state, "e", current_stack)
-        print("pepepe", current_state)
     currentChar = f.read(1)
     ignoreNewline()
     ignoreBlank()
-    print(stack)
+    print(stack, current_state, tag)
     
 
 
