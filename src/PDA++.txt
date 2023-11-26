@@ -68,11 +68,7 @@ inlink href="" l inlink l
 inlink id="" l inlink l
 inlink style="" l inlink l
 inlink class="" l inlink l
-inlink /> a outlink e
-outlink e H inhead H
-outlink e b inbody b
-outlink e z inbody z
-outlink e f inbody f
+inlink /> a inbody e
 
 #h1-h6, p
 inbody <h1 z fh1 az
@@ -81,10 +77,8 @@ inbody <h1 f fh1 af
 fh1 id="" a fh1 a
 fh1 style="" a fh1 a
 fh1 class="" a fh1 a
-fh1 > a inh1 e
-inh1 </h1> b inbody b
-inh1 </h1> z inbody z
-inh1 </h1> f inbody f
+fh1 > a inh1 a
+inh1 </h1> a inbody e
 
 inbody <h2 z fh2 az
 inbody <h2 b fh2 ab
@@ -92,10 +86,8 @@ inbody <h2 f fh2 af
 fh2 id="" a fh2 a
 fh2 style="" a fh2 a
 fh2 class="" a fh2 a
-fh2 > a inh2 e
-inh2 </h2> b inbody b
-inh2 </h2> z inbody z
-inh2 </h2> f inbody f
+fh2 > a inh2 a
+inh2 </h2> a inbody e
 
 inbody <h3 z fh3 az
 inbody <h3 b fh3 ab
@@ -103,10 +95,8 @@ inbody <h3 f fh3 af
 fh3 id="" a fh3 a
 fh3 style="" a fh3 a
 fh3 class="" a fh3 a
-fh3 > a inh3 e
-inh3 </h3> b inbody b
-inh3 </h3> z inbody z
-inh3 </h3> f inbody f
+fh3 > a inh3 a
+inh3 </h3> a inbody e
 
 inbody <h4 z fh4 az
 inbody <h4 b fh4 ab
@@ -114,10 +104,8 @@ inbody <h4 f fh4 af
 fh4 id="" a fh4 a
 fh4 style="" a fh4 a
 fh4 class="" a fh4 a
-fh4 > a inh4 e
-inh4 </h4> b inbody b
-inh4 </h4> z inbody z
-inh4 </h4> f inbody f
+fh4 > a inh4 a
+inh4 </h4> a inbody e
 
 inbody <h5 z fh5 az
 inbody <h5 b fh5 ab
@@ -125,10 +113,8 @@ inbody <h5 f fh5 af
 fh5 id="" a fh5 a
 fh5 style="" a fh5 a
 fh5 class="" a fh5 a
-fh5 > a inh5 e
-inh5 </h5> b inbody b
-inh5 </h5> z inbody z
-inh5 </h5> f inbody f
+fh5 > a inh5 a
+inh5 </h5> a inbody e
 
 inbody <h6 z fh6 az
 inbody <h6 b fh6 ab
@@ -136,10 +122,8 @@ inbody <h6 f fh6 af
 fh6 id="" a fh6 a
 fh6 style="" a fh6 a
 fh6 class="" a fh6 a
-fh6 > a inh6 e
-inh6 </h6> b inbody b
-inh6 </h6> z inbody z
-inh6 </h6> f inbody f
+fh6 > a inh6 a
+inh6 </h6> a inbody e
 
 inbody <p b fp ab
 inbody <p z fp az
@@ -147,42 +131,30 @@ inbody <p f fp af
 fp id="" a fp a
 fp style="" a fp a
 fp class="" a fp a
-inp > a inp e
-inp </p> b inbody b
-inp </p> z inbody z
-inp </p> f inbody f
+inp > a inp a
+inp </p> a inbody e
 
 #formatting
-inbody <em b fem ab
-inem </em> b inbody b
 fem id="" a fem a
 fem style="" a fem a
 fem class="" a fem a
 fem > a inem e
 
-inbody <b b fb ab
-inb </b> b inbody b
 fb id="" a fb a
 fb style="" a fb a
 fb class="" a fb a
 fb > a inb e
 
-inbody <abbr b fabbr ab
-inabbr </abbr> b inbody b
 fabbr id="" a fabbr a
 fabbr style="" a fabbr a
 fabbr class="" a fabbr a
 fabbr > a inabbr e
 
-inbody <strong b fstrong ab
-instrong </strong> b inbody b
 fstrong id="" a fstrong a
 fstrong style="" a fstrong a
 fstrong class="" a fstrong a
 fstrong > a instrong e
 
-inbody <small b fsmall ab
-insmall </small> b inbody b
 fsmall id="" a fsmall a
 fsmall style="" a fsmall a
 fsmall class="" a fsmall a
