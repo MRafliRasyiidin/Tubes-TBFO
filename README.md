@@ -1,6 +1,6 @@
 # Tubes-TBFO
 Tugas Besar IF2124 Teori Bahasa Formal dan Otomata
-Program untuk mengecek apakah file HTML valid menggunakan _pushdown automata_(PDA)
+Program untuk mengecek apakah file HTML valid atau tidak menggunakan _pushdown automata_ (PDA)
 # How to Use
 1. Clone repository ini ke local repository.
 2. Pindahkan file html yang akan diperiksa ke folder test.
